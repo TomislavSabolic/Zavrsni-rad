@@ -31,6 +31,16 @@ create table dostavljac(
     proizvod int not null 
 );
 
+create table lokacija(
+ sifra int not null primary key auto_increment,
+ grad varchar(50)not null,
+ ulica varchar(50)not null,
+ kucnibroj int not null,
+ klijent int,
+ proizvod int,
+ dostavljac int
+);
+
 
 alter table proizvod add foreign key (klijent) references klijent (sifra);
 alter table dostavljac add foreign key(klijent)references klijent(sifra);
