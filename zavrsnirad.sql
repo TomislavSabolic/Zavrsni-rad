@@ -11,3 +11,10 @@ create table klijent(
     email varchar(50)
 
 );
+
+creat table proizvod(
+    sifra int not null primary key auto_increment,
+    naziv varchar (50),
+    cijena decimal(18,2),
+    količina 
+);
