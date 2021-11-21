@@ -5,21 +5,33 @@ use zavrsnirad;
 
 create table klijent(
     sifra int not null primary key auto_increment,
-    ime varchar(50)not null,
+    ime varchar(50) not null,
     prezime varchar(50) not null,
     oib char(11),
     email varchar(50),
     proizvod varchar(50)
+    
 
 );
 
-creat table proizvod(
+create table proizvod(
     sifra int not null primary key auto_increment,
     naziv varchar (50),
     cijena decimal(18,2),
-    količina int,
-    klijent int
+    kolicina int,
+    klijent int not null
 );
 
-alter table klijent add foreign key (proizvod) references proizvod (sifra);
+create table dostavljac(
+    sifra int not null primary key auto_increment,
+    ime varchar(50) not null,
+    prezime varchar(50) not null,
+    brojugovora char(11) not null,
+    klijent int not null ,
+    proizvod int not null 
+);
 
+
+alter table proizvod add foreign key (klijent) references klijent (sifra);
+alter table dostavljac add foreign key(klijent)references klijent(sifra);
+alter table dostavljac add foreign key(proizvod)references proizvod(sifra);
