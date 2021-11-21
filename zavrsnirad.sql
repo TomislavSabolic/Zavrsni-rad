@@ -45,3 +45,7 @@ create table lokacija(
 alter table proizvod add foreign key (klijent) references klijent (sifra);
 alter table dostavljac add foreign key(klijent)references klijent(sifra);
 alter table dostavljac add foreign key(proizvod)references proizvod(sifra);
+
+alter table lokacija add foreign key(klijent)references klijent(sifra);
+alter table lokacija add foreign key(proizvod)references proizvod(sifra);
+alter table lokacija add foreign key (dostavljac)references dostavljac(sifra);
