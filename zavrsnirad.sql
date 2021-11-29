@@ -42,7 +42,7 @@ create table lokacija(
 );
 
 
-alter table proizvod add foreign key (klijent) references klijent (sifra);
+
 
 
 
