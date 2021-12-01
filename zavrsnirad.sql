@@ -51,8 +51,8 @@ alter table lokacija add foreign key(proizvod)references proizvod(sifra);
 alter table lokacija add foreign key (dostavljac)references dostavljac(sifra);
 
 insert into klijent values 
-(null,'Petar','Peric',84395254464,'pero.peric@gmail.com','proizvod01')
-(null,'Ivo','Ivic',15920473256,'ivo.ivic@gmail.com','proizvod02')
-(null,'Tomo','Tomic',91354036420,'tomo.tomic@gmail.com','proizvod03')
+(null,'Petar','Peric',84395254464,'pero.peric@gmail.com','proizvod01'),
+(null,'Ivo','Ivic',15920473256,'ivo.ivic@gmail.com','proizvod02'),
+(null,'Tomo','Tomic',91354036420,'tomo.tomic@gmail.com','proizvod03');
 
 
