@@ -55,4 +55,10 @@ insert into klijent values
 (null,'Ivo','Ivic',15920473256,'ivo.ivic@gmail.com','proizvod02'),
 (null,'Tomo','Tomic',91354036420,'tomo.tomic@gmail.com','proizvod03');
 
+insert into proizvod values
+(null,'proizvod01',249.99,1,1),
+(null,'proizvod02',300.00,2,2),
+(null,'proizvod03',199.99,1,3);
+
+
 
