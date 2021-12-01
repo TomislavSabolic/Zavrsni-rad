@@ -60,5 +60,14 @@ insert into proizvod values
 (null,'proizvod02',300.00,2,2),
 (null,'proizvod03',199.99,1,3);
 
+insert into dostavljac values
+(null,'Damir','Dumancic',045525,1,2),
+(null,'Tomo','Horvatincic',045526,2,1),
+(null,'Bruno','Petkovic',045527,3,3);
+
+
+
+
+
 
 
