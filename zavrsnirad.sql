@@ -67,7 +67,7 @@ insert into dostavljac values
 
 insert into lokacija values
 (null,'Osijek','Travna',35,1,1,1),
-(null,'Našice','Ladanjska',10,2,2,1),
+(null,'Nasice','Ladanjska',10,2,2,1),
 (null,'Pozega','Osjecka',90,3,2,1);
 
 
